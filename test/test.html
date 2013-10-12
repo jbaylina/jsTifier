@@ -1,0 +1,61 @@
+<html>
+<head>
+    <script src="../src/jsTifier.js" type="text/javascript"></script>
+    <script type="text/javascript">i
+
+function OnLoad() {
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    var T = "This is a very long line line with a CR at the end.\n This is the second line.\nAnd this is the last line.";
+    var lh = 12;
+
+    ctx.font = '12px Arial';
+
+    ctx.lineWidth = 1;
+
+    ctx.mlFillText(T, 10, 10, 100, 100, 'top', 'left', lh);
+    ctx.strokeRect(10, 10, 100, 100);
+
+    ctx.mlFillText(T, 110, 10, 100, 100, 'top', 'center', lh);
+    ctx.strokeRect(110, 10, 100, 100);
+
+    ctx.mlFillText(T, 210, 10, 100, 100, 'top', 'right', lh);
+    ctx.strokeRect(210, 10, 100, 100);
+
+    ctx.mlFillText(T, 310, 10, 100, 100, 'top', 'justify', lh);
+    ctx.strokeRect(310, 10, 100, 100);
+
+    ctx.mlFillText(T, 10, 110, 100, 100, 'center', 'left', lh);
+    ctx.strokeRect(10, 110, 100, 100);
+
+    ctx.mlFillText(T, 110, 110, 100, 100, 'center', 'center', lh);
+    ctx.strokeRect(110, 110, 100, 100);
+
+    ctx.mlFillText(T, 210, 110, 100, 100, 'center', 'right', lh);
+    ctx.strokeRect(210, 110, 100, 100);
+
+    ctx.mlFillText(T, 310, 110, 100, 100, 'center', 'justify', lh);
+    ctx.strokeRect(310, 110, 100, 100);
+
+    ctx.mlFillText(T, 10, 210, 100, 100, 'bottom', 'left', lh);
+    ctx.strokeRect(10, 210, 100, 100);
+
+    ctx.mlFillText(T, 110, 210, 100, 100, 'bottom', 'center', lh);
+    ctx.strokeRect(110, 210, 100, 100);
+
+    ctx.mlFillText(T, 210, 210, 100, 100, 'bottom', 'right', lh);
+    ctx.strokeRect(210, 210, 100, 100);
+
+    ctx.mlFillText(T, 310, 210, 100, 100, 'bottom', 'justify', lh);
+    ctx.strokeRect(310, 210, 100, 100);
+
+    ctx.mlStrokeText("Yo can also use mlStrokeText!", 0, 310, 420, 30, 'center', 'center', lh);
+}
+
+    </script>
+</head>
+<body onload="OnLoad()">
+    <canvas id="myCanvas" width="420" height="340"></canvas>
+</body>
+</html>
