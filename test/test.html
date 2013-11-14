@@ -1,7 +1,7 @@
 <html>
 <head>
     <script src="../src/jsTifier.js" type="text/javascript"></script>
-    <script type="text/javascript">i
+    <script type="text/javascript">
 
 function OnLoad() {
     var c = document.getElementById("myCanvas");
@@ -50,7 +50,9 @@ function OnLoad() {
     ctx.mlFillText(T, 310, 210, 100, 100, 'bottom', 'justify', lh);
     ctx.strokeRect(310, 210, 100, 100);
 
-    ctx.mlStrokeText("Yo can also use mlStrokeText!", 0, 310, 420, 30, 'center', 'center', lh);
+    var s=ctx.mlStrokeText("Yo can also use mlStrokeText!", 0, 310, 420, 30, 'center', 'center', lh);
+
+    alert(JSON.stringify(s));
 }
 
     </script>
