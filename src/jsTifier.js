@@ -1,20 +1,25 @@
-// Go to the end of the file to see the example
-
-/// START OF THE mltext.js LIBRARY
 // Library: mllib.js
-// Desciption: Extends the CanvasRenderingContext2D that adds two functions: mlFillText and mlStrokeText.
+// Description: Extends the CanvasRenderingContext2D that adds two functions: mlFillText and mlStrokeText.
+// Go to the end of the file to see the example
 //
-// The prototypes are:
+// ctx.mlFillText(text, x, y, w, h, vAlign, hAlign, lineHeight)
+// ctx.mlStrokeText(text, x, y, w, h, vAlign, hAlign, lineHeight)
 //
-// function mlFillText(text,x,y,w,h,vAlign,hAlign,lineheight);
-// function mlStrokeText(text,x,y,w,h,vAlign,hAlign,lineheight);
-//
-// Where vAlign can be: "top", "center" or "button"
-// And hAlign can be: "left", "center", "right" or "justify"
 // Author: Jordi Baylina. (baylina at uniclau.com)
 // License: GPL
 // Date: 2013-02-21
 
+/**
+ * @param text {string}
+ * @param x {number}
+ * @param y {number}
+ * @param w {number}
+ * @param h {number}
+ * @param hAlign {"left" | "center" | "right" | "justify"}
+ * @param vAlign {"top" | "center" | "bottom"}
+ * @param lineHeight {number}
+ * @param fn {"fillText" | "strokeText"}
+ */
 function mlFunction(text, x, y, w, h, hAlign, vAlign, lineheight, fn) {
 
     // The objective of this part of the code is to generate an array of words. 
