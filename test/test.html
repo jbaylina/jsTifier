@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <title>jsTifier Test</title>
     <script src="../src/jsTifier.js" type="text/javascript"></script>
     <script type="text/javascript">
 
@@ -50,9 +52,13 @@ function OnLoad() {
     ctx.mlFillText(T, 310, 210, 100, 100, 'bottom', 'justify', lh);
     ctx.strokeRect(310, 210, 100, 100);
 
-    var s=ctx.mlStrokeText("Yo can also use mlStrokeText!", 0, 310, 420, 30, 'center', 'center', lh);
+    ctx.font = '22px Arial';
+    var s=ctx.mlStrokeText("mlStrokeText", 0, 310, 420, 30, 'left', 'left', 20);
 
     alert(JSON.stringify(s));
+
+    ctx.fillStyle = '#f00';
+    ctx.mlFillStrokeText("mlFillStrokeText", 0, 310, 420, 30, 'right', 'right', 20);
 }
 
     </script>
