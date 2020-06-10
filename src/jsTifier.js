@@ -1,4 +1,4 @@
-// Example at end of file.
+// See ../test/test.html for usage example.
 
 /// START OF THE mltext.js LIBRARY
 // Library: mllib.js
